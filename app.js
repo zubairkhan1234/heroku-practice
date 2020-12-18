@@ -1,5 +1,6 @@
 var express = require("express")
 var server = express();
+
 const PORT = process.env.PORT || 5000
 
 server.get ("/", ( req, res, next) =>{
@@ -18,5 +19,5 @@ server.get ("/food", ( req, res, next) =>{
 })
  
 server.listen(PORT, () => {
-    console.log("server is running on port " + PORT);
+    console.log("server is running on port" + PORT);
 })
